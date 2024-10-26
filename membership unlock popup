@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feature Unlock Popup</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: rgba(0, 0, 0, 0.7);
+        }
+        #popupContent {
+            width: 80%;
+            max-width: 500px;
+            background: white;
+            padding: 20px;
+            text-align: center;
+        }
+        #popupContent button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="popupContent">
+        <!-- Embedded YouTube video -->
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/sqtxQgvJxO4" 
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+        <!-- Unlock button -->
+        <button onclick="window.location.href='billing-signup-url';">
+            Unlock This Feature
+        </button>
+    </div>
+</body>
+</html>
